@@ -4,13 +4,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Starbucks Review Rating Prediction</title>
+    <title>Styled Starbucks Review Prediction</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: #ffffff;
+            padding: 50px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            max-width: 600px;
+            text-align: center;
+        }
+
+        .container h1 {
+            color: #333333;
+            margin-bottom: 20px;
+        }
+
+        .container p {
+            margin-bottom: 20px;
+            font-size: 18px;
+        }
+
+        .result {
+            font-weight: bold;
+            color: green;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            color: #fff;
+            background-color: #007BFF;
+            transition: background-color 0.3s;
+        }
+
+        .button:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
 
 <body>
     <div class="container">
         <h1>Starbucks Review Rating Prediction</h1>
-        <p>From your review, we can predict, you will rate us <span id="result">{{ result }}</span> out of 5.</p>
+        <p>From your review, we can predict that you will rate us <span class="result">4.5</span> out of 5.</p>
         <a class="button" href="/">Home</a>
     </div>
 </body>

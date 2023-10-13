@@ -44,10 +44,10 @@ def submit():
         # Joining all remaining words
         review = " ".join(review)
         
-        vectorized = vectorize(review)
+        vectorized = vectorize(review).reshape(1, -1)
 
         prediction = model.predict(vectorized)[0]
     return render_template('prediction.html',result=prediction)
 
 if __name__=='__main__':
-    app.run(debug=True)
+    app.run(host='0.0.0.0', port=8080)
